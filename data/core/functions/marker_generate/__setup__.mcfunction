@@ -1,0 +1,3 @@
+scoreboard objectives add core_marker_generate dummy
+data modify storage mcmmt:core utils.marker_generate set value {name:"",namelist:[],scoreboardname:"",color:"",colorlist:[],displayname:"",displaynamelist:[],index:0}
+execute unless score installed core_ctrl matches -2147483648..2147483647 if score logon mainctrl matches 1 run tellraw @a[tag=Dev] [{"text":"✔ ","color":"green"},{"text":"Successfully installed util : Marker Generate.","color":"gray"}]

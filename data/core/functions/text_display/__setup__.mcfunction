@@ -1,0 +1,2 @@
+data modify storage mcmmt:core utils.text_display set value {objective:"@a",scoreboardname:"core_player_score",colorlist:["","gold","gray","yellow"],num:10,title:"当前个人积分排名: ",top_pos:"405 106 442",namelist:[]} 
+scoreboard objectives add core_text_display_config dummy

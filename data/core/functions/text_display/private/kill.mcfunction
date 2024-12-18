@@ -1,0 +1,2 @@
+$execute positioned $(top_pos) run kill @e[type=text_display,distance=..5]
+$summon minecraft:text_display $(top_pos) {alignment: "center", background: 1073741824, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"text":"$(title)"}', text_opacity: -1b, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}, billboard: "vertical"}

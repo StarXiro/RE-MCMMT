@@ -1,0 +1,10 @@
+schedule clear core:countdown/10
+schedule clear core:countdown/9
+schedule clear core:countdown/8
+schedule clear core:countdown/7
+schedule clear core:countdown/6
+schedule clear core:countdown/5
+schedule clear core:countdown/4
+schedule clear core:countdown/3
+schedule clear core:countdown/2
+schedule clear core:countdown/1

@@ -1,0 +1,3 @@
+$summon minecraft:text_display ~ ~-$(pos) ~ {alignment: "center", background: 1073741824, default_background: 0b, line_width: 200, see_through: 0b, shadow: 0b, text: '{"translate":"%s %s %s %s %s","with":[{"text":"$(index).","color":"$(color)"},{"selector":"$(objective)[tag=rank$(index)]"},{"text":" · · · · · · ","color":"$(color)"},{"score":{"name":"$(objective)[tag=rank$(index)]","objective":"$(scoreboardname)"},"color":"$(color)"},{"text":"pts","color":"$(color)"}]}', text_opacity: -1b, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}, billboard: "vertical"}
+
+scoreboard players add pos core_text_display_config 375
