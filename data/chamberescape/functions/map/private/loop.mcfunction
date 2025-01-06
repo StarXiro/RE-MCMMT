@@ -1,0 +1,3 @@
+$execute as @s positioned ~-15 ~-3 ~-15 if entity @a[dx=30,dy=30,dz=30,scores={room_info=1..},team=$(color)] run function chamberescape:rooms/$(room)/info with entity @s data
+$execute as @s positioned ~-15 ~-3 ~-15 if entity @a[dx=30,dy=30,dz=30,scores={room_reload=1..},team=$(color)] run execute at @s run function chamberescape:rooms/$(room)/clone with entity @s data
+$execute at @s run function chamberescape:rooms/$(room)/loop with entity @s data

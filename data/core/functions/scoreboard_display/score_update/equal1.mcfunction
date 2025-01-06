@@ -1,6 +1,7 @@
 #line2
 data modify storage mcmmt:core team_display.i set value 2
 data modify storage mcmmt:core team.index set value 1
+scoreboard players set self core_scoreboard_display_config 1
 function core:scoreboard_display/score_update/update with storage mcmmt:core team
 
 #line3

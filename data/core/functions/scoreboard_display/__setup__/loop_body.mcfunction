@@ -24,5 +24,5 @@ $scoreboard players set 当前地图 scoreboard_$(team) 6
 $scoreboard players set 游戏进度 scoreboard_$(team) 7
 $scoreboard players display name 占位 scoreboard_$(team) [{"text":"  "}]
 $scoreboard players display name 占位2 scoreboard_$(team) [{"text":"  "}]
-$scoreboard players display name 游戏积分 scoreboard_$(team) {"text":"本游戏积分:","color":"aqua"}
+$scoreboard players display name 游戏积分 scoreboard_$(team) {"text":"总游戏积分:","color":"aqua"}
 #$scoreboard players set $(team) tgttos_sum_score 0

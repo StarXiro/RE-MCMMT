@@ -1,0 +1,1 @@
+execute as @e[tag=chamberescape_marker] run function chamberescape:map/private/generate_room with entity @s data

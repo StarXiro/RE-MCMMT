@@ -44,5 +44,12 @@ function core:scoreboard_display/loop/loop_body with storage mcmmt:core scoreboa
 function core:scoreboard_display/loop/for_team with storage mcmmt:core scoreboard.content
 
 function core:scoreboard_display/score_update/main
+function core:scoreboard_display/score_update/main
+function core:scoreboard_display/score_update/main
+function core:scoreboard_display/score_update/main
+function core:scoreboard_display/score_update/main
+function core:scoreboard_display/score_update/main
+function core:scoreboard_display/score_update/main
+function core:scoreboard_display/score_update/main
 
 schedule function core:scoreboard_display/main 1t

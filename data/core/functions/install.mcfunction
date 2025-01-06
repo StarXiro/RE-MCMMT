@@ -18,11 +18,18 @@ scoreboard objectives add core_team_list dummy
 scoreboard objectives add personalscore trigger
 scoreboard objectives add core_player_score dummy
 scoreboard objectives add core_team_score dummy
+scoreboard objectives add game_room_finish dummy
+scoreboard objectives add game_store_score dummy
+scoreboard objectives add room_player_count dummy
 
 #scoreb init part2
 scoreboard players set @a[tag=player] core_player_score 0
 scoreboard players set game_count core_game_config 0
 scoreboard players reset * core_team_score
+scoreboard players set teamscore_mode core_scoreboard_display_config 0
+scoreboard players set round_mode core_scoreboard_display_config 0
+scoreboard players set room_mode core_scoreboard_display_config 1
+scoreboard players set player_mode core_scoreboard_display_config 1
 
 #data init
 data modify storage mcmmt:core config.teamlist set value ["red","orange","yellow","lime","green","blue","aqua","pink"]
@@ -47,6 +54,7 @@ function core:marker_generate/__setup__
 function core:scoreboard_sort/__setup__
 function core:num/__setup__
 function core:text_display/__setup__
+function core:scoreboard_display/__setup__
 
 #loop
 function core:loop_actions/trigger
@@ -55,6 +63,11 @@ function core:scoreboard_display/main
 #clock start
 execute unless score installed core_ctrl matches -2147483648..2147483647 run scoreboard players set coreclock core_clock 0
 function core:clock/forcore/main
+
+#scoreboard update
+data modify storage mcmmt:core scoreboard.content.score_display set value "当前总积分排名: "
+data modify storage mcmmt:core scoreboard.content.count_display set value "在线玩家数"
+function lobby:score_action/update
 
 #ouput info
 data modify storage mcmmt:core info set value {"game_name":"MCMMT Core","author":"StarXiro","version":"0.0.0","update_time":"12/12/2024","run_time":"/"}

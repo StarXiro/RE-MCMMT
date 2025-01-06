@@ -1,0 +1,1 @@
+scoreboard players set room_mode core_scoreboard_display_config 0

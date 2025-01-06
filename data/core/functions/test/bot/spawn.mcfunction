@@ -1,34 +1,34 @@
-player bot1 spawn
-player bot2 spawn
-player bot3 spawn
-player bot4 spawn
-player bot5 spawn
-player bot6 spawn
-player bot7 spawn
-player bot8 spawn
-player bot9 spawn
-player bot10 spawn
-#player bot11 spawn
-#player bot12 spawn
-#player bot13 spawn
-#player bot14 spawn
-#player bot15 spawn
-#player bot16 spawn
-#player bot17 spawn
-#player bot18 spawn
-#player bot19 spawn
-#player bot20 spawn
-#player bot21 spawn
-#player bot22 spawn
-#player bot23 spawn
-#player bot24 spawn
-#player bot25 spawn
-#player bot26 spawn
-#player bot27 spawn
-#player bot28 spawn
-#player bot29 spawn
-#player bot30 spawn
-#player bot31 spawn
+#player bot1 spawn at 400 102 400
+#player bot2 spawn at 400 102 400
+#player bot3 spawn at 400 102 400
+#player bot4 spawn at 400 102 400
+#player bot5 spawn at 400 102 400
+#player bot6 spawn at 400 102 400
+#player bot7 spawn at 400 102 400
+#player bot8 spawn at 400 102 400
+#player bot9 spawn at 400 102 400
+#player bot10 spawn at 400 102 400
+#player bot11 spawn at 400 102 400
+#player bot12 spawn at 400 102 400
+#player bot13 spawn at 400 102 400
+#player bot14 spawn at 400 102 400
+#player bot15 spawn at 400 102 400
+#player bot16 spawn at 400 102 400
+#player bot17 spawn at 400 102 400
+#player bot18 spawn at 400 102 400
+#player bot19 spawn at 400 102 400
+#player bot20 spawn at 400 102 400
+#player bot21 spawn at 400 102 400
+#player bot22 spawn at 400 102 400
+#player bot23 spawn at 400 102 400
+#player bot24 spawn at 400 102 400
+#player bot25 spawn at 400 102 400
+#player bot26 spawn at 400 102 400
+#player bot27 spawn at 400 102 400
+#player bot28 spawn at 400 102 400
+#player bot29 spawn at 400 102 400
+#player bot30 spawn at 400 102 400
+#player bot31 spawn at 400 102 400
 player bot1 sprint
 player bot2 sprint
 player bot3 sprint

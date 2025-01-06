@@ -10,6 +10,8 @@ function core:broadcast/stop
 schedule clear fallingsky:pause
 schedule clear fallingsky:uninstall
 
+kill @e[type=falling_block]
+
 #scoreboard reset
 scoreboard players set falling_sky current_game 0
 scoreboard players set in_game core_ctrl 0

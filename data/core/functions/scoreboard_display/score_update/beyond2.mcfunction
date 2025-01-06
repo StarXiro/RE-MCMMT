@@ -9,6 +9,7 @@ function core:scoreboard_display/score_update/update with storage mcmmt:core tea
 data modify storage mcmmt:core team_display.i set value 3
 scoreboard players add k core_index 1
 execute store result storage mcmmt:core team.index int 1 run scoreboard players get k core_index
+scoreboard players set self core_scoreboard_display_config 1
 function core:scoreboard_display/score_update/update with storage mcmmt:core team
 
 #line4

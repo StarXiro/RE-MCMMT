@@ -1,0 +1,1 @@
+$execute at @s run function chamberescape:rooms/$(room)/clone with entity @s data

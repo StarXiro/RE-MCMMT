@@ -1,2 +1,4 @@
 #获得了参数 name rank score color i name2
-$scoreboard players display name 队伍$(i) scoreboard_$(name2) {"translate":"$(rank). %s %s %s %s %s %s %s $(score)","with":[{"text":"$(name)","color":"$(color)"},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "}]}
+$execute if score self core_scoreboard_display_config matches 0 run scoreboard players display name 队伍$(i) scoreboard_$(name2) {"translate":" %s %s %s %s %s %s %s %s","with":[{"text":"$(rank).","color":"white"},{"text":"$(name)","color":"$(color)"},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":"$(score)","color":"white"}]}
+$execute if score self core_scoreboard_display_config matches 1 run scoreboard players display name 队伍$(i) scoreboard_$(name2) {"translate":"%s %s %s %s %s %s %s %s","with":[{"text":"⏵$(rank).","color":"yellow"},{"text":"$(name)","color":"$(color)"},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":" "},{"text":"$(score)","color":"yellow"}]}
+scoreboard players set self core_scoreboard_display_config 0

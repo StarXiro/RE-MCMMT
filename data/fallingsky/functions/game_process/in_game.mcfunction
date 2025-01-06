@@ -1,7 +1,6 @@
 #countdown init
 scoreboard players set countdown core_clock 179
 scoreboard players set in_game core_ctrl 1
-scoreboard players add round_count process_ctrl 1
 
 #scoreboard update
 scoreboard players set after_game process_ctrl 0
