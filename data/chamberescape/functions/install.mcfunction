@@ -16,7 +16,7 @@ data modify storage mcmmt:core scoreboard.content.score_display set value "å·²å®
 data modify storage mcmmt:core scoreboard.content.max_round set value 1
 
 #data init part2
-data modify storage mcmmt:chamberescape roomlist set value ["","test","test","test","test","test","test","test","test","test",""]
+data modify storage mcmmt:chamberescape roomlist set value ["","year","cart","year","windows","year","windows","year","cart","year",""]
 data modify storage mcmmt:chamberescape teamlist set from storage mcmmt:core config.teamlist
 data modify storage mcmmt:chamberescape teamlist prepend value " "
 data modify storage mcmmt:chamberescape namelist set from storage mcmmt:core config.teamlist2

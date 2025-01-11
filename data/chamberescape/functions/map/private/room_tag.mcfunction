@@ -1,0 +1,2 @@
+$execute as @a[tag=in_room$(num),team=$(color)] run function chamberescape:map/tag
+$execute positioned ~-14.5 ~-3 ~-14.5 run tag @a[tag=Chamber_escape,dx=28,dz=28,dy=28,team=$(color)] add in_room$(num)

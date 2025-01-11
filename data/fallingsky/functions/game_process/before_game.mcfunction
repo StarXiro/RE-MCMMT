@@ -13,6 +13,6 @@ scoreboard players add round_count process_ctrl 1
 
 schedule function fallingsky:game_process/in_game 400t
 schedule function core:countdown/start 100t
-schedule function fallingsky:loop_actions/death_justice 5t
-schedule function fallingsky:loop_actions/end_justice 5t
+function fallingsky:loop_actions/death_justice
+function fallingsky:loop_actions/end_justice
 function fallingsky:reload_map/origin 
