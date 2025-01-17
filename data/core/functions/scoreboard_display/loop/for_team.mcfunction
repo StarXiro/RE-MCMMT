@@ -6,7 +6,7 @@ $scoreboard players display name 当前地图 scoreboard_$(team) [{"text":"当�
 
 #player_finished with sum
 $execute if score player_mode core_scoreboard_display_config matches 1 run scoreboard players display name 玩家数 scoreboard_$(team) [{"text":"$(count_display): ","color":"green"},{"text":"$(finish_count)","color":"green"},{"text":"/","color":"green"},{"text":"$(player_count)","color":"green"}]
-$execute if score teamscore_mode core_scoreboard_display_config matches 1 run scoreboard players display name 玩家数 scoreboard_$(team) [{"text":"已获得积分: ","color":"yellow"},{"text":"$(score)","color":"gold"}]
+$execute if score teamscore_mode core_scoreboard_display_config matches 1 run scoreboard players display name 玩家数 scoreboard_$(team) [{"text":"已获得积分: ","color":"yellow"},{"text":"$(score)","color":"yellow"}]
 
 #list_name
 $scoreboard players display name 游戏积分 scoreboard_$(team) {"text":"$(score_display)","color":"aqua"}

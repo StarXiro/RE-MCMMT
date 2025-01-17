@@ -1,4 +1,3 @@
-$execute positioned $(centerx) 100 $(centerz) run forceload add ~-49 ~-49 ~49 ~49
 $execute positioned $(centerx) 100 $(centerz) if score j chamberescape_index matches 1 run summon marker ~-32 ~ ~32 {data:{color:"$(color)",display_color:"$(display_color)",name:"$(name)",room:"$(room)",num:"$(j)"},Tags:["$(color)","room$(j)","chamberescape_marker"]}
 $execute positioned $(centerx) 100 $(centerz) if score j chamberescape_index matches 2 run summon marker ~ ~ ~32 {data:{color:"$(color)",display_color:"$(display_color)",name:"$(name)",room:"$(room)",num:"$(j)"},Tags:["$(color)","room$(j)","chamberescape_marker"]}
 $execute positioned $(centerx) 100 $(centerz) if score j chamberescape_index matches 3 run summon marker ~32 ~ ~32 {data:{color:"$(color)",display_color:"$(display_color)",name:"$(name)",room:"$(room)",num:"$(j)"},Tags:["$(color)","room$(j)","chamberescape_marker"]}

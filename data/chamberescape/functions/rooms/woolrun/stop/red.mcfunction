@@ -1,0 +1,1 @@
+setblock ~6 ~3 ~-6 red_wool

@@ -1,4 +1,3 @@
-forceload add ~-16 ~-16 ~16 ~16
 
 fill ~-3 ~1 ~15 ~3 ~4 ~16 light_gray_wool 
 fill ~-3 ~1 ~-15 ~3 ~4 ~-16 light_gray_wool 
@@ -16,5 +15,3 @@ fill ~-16 ~-1 ~2 ~-16 ~-1 ~-2 bedrock
 fill ~16 ~-1 ~2 ~16 ~-1 ~-2 bedrock
 
 kill @e[type=item,distance=..30]
-
-forceload remove ~-16 ~-16 ~16 ~16

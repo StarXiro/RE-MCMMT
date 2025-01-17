@@ -1,0 +1,4 @@
+schedule clear fallingsky:game_process/in_game
+schedule clear fallingsky:game_process/after_game
+schedule clear fallingsky:game_process/end_game
+schedule clear fallingsky:game_process/before_game

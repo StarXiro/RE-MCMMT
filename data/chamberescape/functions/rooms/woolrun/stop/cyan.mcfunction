@@ -1,0 +1,1 @@
+setblock ~6 ~4 ~6 cyan_wool

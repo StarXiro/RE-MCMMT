@@ -1,0 +1,1 @@
+fill ~17 ~4 ~3 ~17 ~1 ~-3 light_gray_concrete

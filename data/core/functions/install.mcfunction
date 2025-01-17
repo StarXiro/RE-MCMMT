@@ -2,6 +2,9 @@
 scoreboard objectives add core_loop dummy
 scoreboard objectives add core_ctrl dummy
 scoreboard objectives add core_clock dummy
+scoreboard objectives add timer_minute dummy
+scoreboard objectives add timer_ms dummy
+scoreboard objectives add timer_second dummy
 scoreboard objectives add core_scoreboard_display_config dummy
 scoreboard objectives add player_count dummy
 scoreboard objectives add game_player_count dummy
