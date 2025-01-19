@@ -5,8 +5,7 @@ scoreboard players set in_game core_ctrl 1
 #scoreboard update
 scoreboard players set after_game process_ctrl 0
 scoreboard players set before_game process_ctrl 0
-scoreboard players set in_game process_ctrl 1
-scoreboard players set current_score score_temp 0
-
+scoreboard players set in_game process_ctrl 2
+execute as @e[tag=room2] at @s run function chamberescape:map/private/start_door
 #loop
 schedule function chamberescape:game_process/end_game 12000t

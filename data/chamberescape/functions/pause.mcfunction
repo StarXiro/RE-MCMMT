@@ -1,8 +1,6 @@
 #schedule clear
 schedule clear core:clock/forgame/main
 schedule clear core:clock/ingame/main
-function chamberescape:loop_actions/stop
-function chamberescape:block_generator/stop
 function core:countdown/stop
 function chamberescape:game_process/stop
 function chamberescape:game_intro/stop

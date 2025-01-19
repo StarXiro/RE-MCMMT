@@ -7,7 +7,6 @@ tag @a[tag=Chamber_escape] remove Chamber_escape
 
 scoreboard players set teamscore_mode core_scoreboard_display_config 0
 scoreboard players set room_mode core_scoreboard_display_config 0
-scoreboard players set teamscore_mode core_scoreboard_display_config 0
 scoreboard players set player_mode core_scoreboard_display_config 0
 
 #back to lobby

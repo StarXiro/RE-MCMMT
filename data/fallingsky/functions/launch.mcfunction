@@ -6,7 +6,6 @@ function fallingsky:install
 #countdown 
 scoreboard players set falling_sky current_game 1
 scoreboard players set countdown core_clock 90
-schedule function fallingsky:game_process/before_game 1400t
 scoreboard players set round_count process_ctrl 0
 scoreboard players add game_count core_game_config 1
 scoreboard players reset @a game_player_score
@@ -44,6 +43,7 @@ function fallingsky:loop_actions/item_kill
 function fallingsky:game_intro/main
 # |
 # v
+schedule function fallingsky:game_process/before_game 1400t
 #function fallingsky:game_process/before_game
 # |
 # v
