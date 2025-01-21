@@ -7,4 +7,5 @@ $execute if score $(color) room$(num) matches 1 run scoreboard players add $(col
 $execute if score $(color) room$(num) matches 2 run scoreboard players add $(color) game_store_score 32
 $execute if score $(color) room$(num) matches 3 run scoreboard players add $(color) game_store_score 16
 $execute positioned ~-15 ~-3 ~-15 run scoreboard players operation @a[tag=Chamber_escape,team=$(color),dx=30,dy=30,dz=30] game_player_score += @s score_temp
+$execute positioned ~-15 ~-3 ~-15 run scoreboard players add @a[tag=Chamber_escape,team=$(color),dx=30,dy=30,dz=30] room_finish_count 1
 execute store result entity @s data.score int 1 run scoreboard players get @s score_temp

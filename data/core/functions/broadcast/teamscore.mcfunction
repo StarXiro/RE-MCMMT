@@ -1,5 +1,5 @@
 tellraw @a ""
-tellraw @a "本回合队伍得分: "
+tellraw @a "本游戏队伍得分: "
 data modify storage mcmmt:core utils.marker_generate.scoreboardname set value "game_team_score"
 data modify storage mcmmt:core utils.marker_generate.namelist set from storage mcmmt:core config.teamlist
 data modify storage mcmmt:core utils.marker_generate.displaynamelist set from storage mcmmt:core config.teamlist2

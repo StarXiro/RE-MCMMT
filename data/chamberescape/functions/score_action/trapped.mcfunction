@@ -1,0 +1,2 @@
+execute as @a[scores={game_finish_count=0},tag=Chamber_escape] run scoreboard players set @s game_player_score 0
+execute positioned 0 0 0 as @e[type=marker,tag=generated,sort=nearest,limit=8] run function chamberescape:score_action/private/team_calculate with entity @s data

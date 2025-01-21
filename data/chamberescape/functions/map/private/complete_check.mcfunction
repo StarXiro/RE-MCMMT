@@ -1,0 +1,1 @@
+$execute if score $(name) game_finish_count = $(name) game_player_count run function chamberescape:broadcast/complete with entity @s data

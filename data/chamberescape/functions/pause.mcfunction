@@ -7,6 +7,7 @@ function chamberescape:game_intro/stop
 function core:broadcast/stop
 schedule clear chamberescape:pause
 schedule clear chamberescape:uninstall
+schedule clear chamberescape:map/loop
 
 #scoreboard reset
 scoreboard players set chamber_escape current_game 0

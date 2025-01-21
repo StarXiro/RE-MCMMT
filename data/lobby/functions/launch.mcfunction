@@ -17,3 +17,4 @@ scoreboard players set round_mode core_scoreboard_display_config 0
 scoreboard players set teamscore_mode core_scoreboard_display_config 0
 scoreboard players set player_mode core_scoreboard_display_config 1
 scoreboard players set @a[tag=player] game_finish_count 1
+scoreboard players set @a[tag=player] game_player_count 1

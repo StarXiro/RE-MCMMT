@@ -4,6 +4,10 @@ execute as @e[tag=chamberescape_marker,tag=started,tag=!finished] at @s run func
 execute as @e[tag=chamberescape_marker,tag=started,tag=!finished] run tag @s add counting
 execute as @a[tag=Chamber_escape] at @s if block ~ ~-2 ~ bedrock if block ~ ~-1 ~ amethyst_block run function chamberescape:map/board
 execute as @a[tag=Chamber_escape] at @s if block ~ ~-3 ~ bedrock if block ~ ~-2 ~ amethyst_block run function chamberescape:map/board
+execute as @a[tag=Chamber_escape] at @s if block ~ ~1 ~-0.3001 end_gateway run scoreboard players set @s game_finish_count 1
+execute as @a[scores={game_finish_count=1}] run tag @s add finished
+execute positioned 0 0 0 as @e[tag=generated,sort=nearest,limit=8] run function chamberescape:map/private/complete_check with entity @s data
+execute positioned 0 0 0 as @e[tag=generated,sort=nearest,limit=8] run function chamberescape:death_action/check with entity @s data
 scoreboard players set @a room_info 0
 scoreboard players set @a room_reload 0
 

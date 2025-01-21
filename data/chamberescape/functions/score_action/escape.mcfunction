@@ -1,0 +1,1 @@
+$scoreboard players add $(name) game_store_score 200

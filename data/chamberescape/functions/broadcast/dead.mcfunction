@@ -1,0 +1,2 @@
+$tellraw @s {"translate":"%s%s%s 你在挑战密室时不慎死亡！","with":[{"text":"[-","color":"red"},{"score":{"objective":"score_gap","name":"@s"},"color":"red"},{"text":" pts]","color":"red"},{"selector":"@a[scores={death_count=1..},team=$(name),tag=Chamber_escape]"}]}
+$execute as @a[scores={death_count=0},team=$(name),tag=Chamber_escape] run tellraw @s {"translate":"%s %s在挑战密室时不慎死亡！","with":[{"text":"[☠]","color":"red"},{"selector":"@a[scores={death_count=1..},team=$(name),tag=Chamber_escape]"}]}

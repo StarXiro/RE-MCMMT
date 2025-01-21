@@ -1,6 +1,5 @@
 #init
 scoreboard players set installed chamberescape_ctrl -1
-
 forceload add 1856 1856 1920 1920
 forceload add 2856 2856 2920 2920
 forceload add 3856 3856 3920 3920
@@ -40,11 +39,15 @@ tag @a[tag=player] add Chamber_escape
 #prepare
 gamemode adventure @a[tag=Chamber_escape]
 clear @a[tag=Chamber_escape]
+scoreboard players set @a[tag=Chamber_escape] death_count 0
+scoreboard players set @a[tag=Chamber_escape] room_finish_count 0
 scoreboard players set @a[tag=Chamber_escape] game_player_score 0
 scoreboard players set @a[tag=Chamber_escape] game_finish_count 0
+scoreboard players set @a[tag=Chamber_escape] game_player_count 1
+tag @a[tag=finished] remove finished
 scoreboard players reset * game_store_score
 
-function chamberescape:map/loop
+schedule function chamberescape:map/loop 1t
 #晚点会改吗,会改的。
 
 spawnpoint @a[team=red,tag=Chamber_escape] 1888 101 1941 180

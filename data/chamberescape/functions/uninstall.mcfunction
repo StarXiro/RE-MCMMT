@@ -3,6 +3,8 @@ function chamberescape:pause
 
 #tag
 tag @a[tag=player,tag=Chamber_escape] remove in_game
+tag @a[tag=Chamber_escape] remove finished
+scoreboard players set @a[tag=Chamber_escape] game_player_count 0
 tag @a[tag=Chamber_escape] remove Chamber_escape
 
 scoreboard players set teamscore_mode core_scoreboard_display_config 0

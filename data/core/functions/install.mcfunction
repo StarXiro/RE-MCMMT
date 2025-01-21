@@ -24,6 +24,8 @@ scoreboard objectives add core_team_score dummy
 scoreboard objectives add game_room_finish dummy
 scoreboard objectives add game_store_score dummy
 scoreboard objectives add room_player_count dummy
+scoreboard objectives add score_gap dummy
+scoreboard objectives add room_finish_count dummy
 
 #scoreb init part2
 scoreboard players set @a[tag=player] core_player_score 0

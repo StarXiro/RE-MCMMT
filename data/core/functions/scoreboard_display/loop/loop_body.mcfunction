@@ -2,6 +2,9 @@
 $scoreboard players reset $(team) core_player_count
 $scoreboard players operation $(team) core_player_count += @a[team=$(team)] core_player_count
 
+$scoreboard players reset $(team) game_player_count
+$scoreboard players operation $(team) game_player_count += @a[team=$(team)] game_player_count
+
 #finishcount set
 $scoreboard players reset $(team) game_finish_count
 $scoreboard players operation $(team) game_finish_count += @a[team=$(team)] game_finish_count

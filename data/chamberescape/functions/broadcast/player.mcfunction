@@ -1,0 +1,1 @@
+execute positioned 0 0 0 as @e[tag=generated,sort=nearest,limit=8] run function chamberescape:broadcast/private/player with entity @s data 
