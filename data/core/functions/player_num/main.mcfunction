@@ -1,0 +1,1 @@
+execute positioned 0 0 0 as @e[limit=8,tag=generated,sort=nearest] run function core:player_num/private/for_team with entity @s data

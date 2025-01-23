@@ -2,10 +2,9 @@ execute as @e[tag=chamberescape_marker] at @s run function chamberescape:map/pri
 execute as @e[tag=chamberescape_marker,tag=!started] run function chamberescape:map/private/start with entity @s data
 execute as @e[tag=chamberescape_marker,tag=started,tag=!finished] at @s run function chamberescape:map/private/loop with entity @s data
 execute as @e[tag=chamberescape_marker,tag=started,tag=!finished] run tag @s add counting
-execute as @a[tag=Chamber_escape] at @s if block ~ ~-2 ~ bedrock if block ~ ~-1 ~ amethyst_block run function chamberescape:map/board
-execute as @a[tag=Chamber_escape] at @s if block ~ ~-3 ~ bedrock if block ~ ~-2 ~ amethyst_block run function chamberescape:map/board
-execute as @a[tag=Chamber_escape] at @s if block ~ ~1 ~-0.3001 end_gateway run scoreboard players set @s game_finish_count 1
-execute as @a[scores={game_finish_count=1}] run tag @s add finished
+execute as @a[tag=Chamber_escape] at @s if block ~ ~-2 ~ bedrock if block ~ ~-1 ~ amethyst_block run function chamberescape:map/private/on_board
+execute as @a[tag=Chamber_escape] at @s if block ~ ~-3 ~ bedrock if block ~ ~-2 ~ amethyst_block run function chamberescape:map/private/on_board
+execute as @a[tag=Chamber_escape] at @s if block ~ ~1 ~-0.300001 end_gateway run function chamberescape:map/private/escape
 execute positioned 0 0 0 as @e[tag=generated,sort=nearest,limit=8] run function chamberescape:map/private/complete_check with entity @s data
 execute positioned 0 0 0 as @e[tag=generated,sort=nearest,limit=8] run function chamberescape:death_action/check with entity @s data
 scoreboard players set @a room_info 0

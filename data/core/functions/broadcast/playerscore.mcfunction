@@ -8,6 +8,6 @@ execute as @a[tag=player] if score @s game_player_score = 2 core_scoreboard_sort
 execute as @a[tag=player] if score @s game_player_score = 3 core_scoreboard_sort_rank run tellraw @a {"translate":"3. %s: %s","with":[{"selector":"@s"},{"score":{"name":"@s","objective":"game_player_score"}}]}
 execute as @a[tag=player] if score @s game_player_score = 4 core_scoreboard_sort_rank run tellraw @a {"translate":"4. %s: %s","with":[{"selector":"@s"},{"score":{"name":"@s","objective":"game_player_score"}}]}
 execute as @a[tag=player] if score @s game_player_score = 5 core_scoreboard_sort_rank run tellraw @a {"translate":"5. %s: %s","with":[{"selector":"@s"},{"score":{"name":"@s","objective":"game_player_score"}}]}
-tellraw @a "本游戏表现: "
+tellraw @a ""
 execute as @a[tag=player] run tellraw @s {"translate":"%s. %s: %s","with":[{"score":{"name":"@s","objective":"core_scoreboard_sort_prank"}},{"selector":"@s"},{"score":{"name":"@s","objective":"game_player_score"}}]}
 tellraw @a ""

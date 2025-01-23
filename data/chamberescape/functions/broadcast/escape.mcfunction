@@ -1,0 +1,3 @@
+$execute as @a[tag=!finished,scores={game_finish_count=1},team=$(name)] run tellraw @a[team=$(name),tag=finished] {"translate":"[%s] %s 已成功逃脱! ","with":[{"text":"✔","color":"green"},{"selector":"@s"}]}
+$execute as @a[tag=!finished,scores={game_finish_count=1},team=$(name)] run tellraw @a[team=$(name),scores={game_finish_count=0}] {"translate":"%s 已成功逃脱! ","with":[{"selector":"@s"}]}
+$execute as @a[tag=!finished,scores={game_finish_count=1},team=$(name)] run tellraw @s {"translate":"%s%s%s 你已成功逃脱密室! ","with":[{"text":"[+","color":"gold"},{"score":{"objective":"game_player_score","name":"@s"},"color":"gold"},{"text":" pts]","color":"gold"}]}
