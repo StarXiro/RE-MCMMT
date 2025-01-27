@@ -1,0 +1,1 @@
+$setblock -3000 112 -3000 $(woolcolor)_stained_glass

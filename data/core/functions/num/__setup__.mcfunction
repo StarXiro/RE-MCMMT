@@ -6,4 +6,5 @@ scoreboard players set 20 core_num 20
 scoreboard players set 6 core_num 6
 scoreboard players set 5 core_num 5
 scoreboard players set 4 core_num 4
+scoreboard players set 3 core_num 3
 scoreboard players set 1 core_num 1

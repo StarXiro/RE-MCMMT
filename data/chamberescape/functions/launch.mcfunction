@@ -38,7 +38,6 @@ tag @a[tag=player] add Chamber_escape
 
 #prepare
 gamemode adventure @a[tag=Chamber_escape]
-clear @a[tag=Chamber_escape]
 scoreboard players set @a[tag=Chamber_escape] death_count 0
 scoreboard players set @a[tag=Chamber_escape] room_finish_count 0
 scoreboard players set @a[tag=Chamber_escape] game_player_score 0

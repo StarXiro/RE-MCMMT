@@ -1,0 +1,3 @@
+tellraw @a[tag=!in_game] {"translate":"%s%s","with":[{"text":"回合结束! 本回合存活玩家:","color":"gray"},{"selector":"@a[tag=in_game]"}]}
+tellraw @a[tag=in_game] {"translate":"%s %s%s","with":[{"text":"[+120 pts]","color":"gold"},{"text":"你存活到了最后! 本回合存活玩家: ","color":"white"},{"selector":"@a[tag=in_game]"}]}
+tellraw @a[tag=in_game] {"translate":"%s 你的本轮存活排名为第%s名。","with":[{"text":"[+90 pts]","color":"gold"},{"text":"1","color":"gold"}]}

@@ -1,0 +1,1 @@
+$data modify storage mcmmt:fallingsky death.message set from storage mcmmt:fallingsky death.messagelist[$(index)]

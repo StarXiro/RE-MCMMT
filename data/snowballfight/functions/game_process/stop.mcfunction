@@ -1,0 +1,3 @@
+schedule clear snowballfight:game_process/in_game
+schedule clear snowballfight:game_process/end_game
+schedule clear snowballfight:game_process/before_game

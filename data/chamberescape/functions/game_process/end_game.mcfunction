@@ -1,9 +1,9 @@
 #end_game
 execute as @e[tag=room8] at @s run function chamberescape:map/private/finish_door
-execute as @a[tag=Chamber_escape] run gamemode spectator @s
+execute as @a[tag=Chamber_escape,tag=!finished] run tp @s -2000 109 -2000
 clear @a[tag=Chamber_escape]
 effect give @a[tag=Chamber_escape] instant_health 1 5 true
-
+effect give @a[tag=Chamber_escape] resistance infinite 4 true
 #scoreboard update
 scoreboard players set countdown core_clock 60
 scoreboard players set end_game process_ctrl 1

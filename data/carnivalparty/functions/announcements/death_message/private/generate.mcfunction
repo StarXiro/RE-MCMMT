@@ -1,0 +1,2 @@
+$tellraw @a[distance=0.0001..,tag=in_game] {"translate":"%s %s%s","with":[{"text":"[+6 pts]","color":"gold"},{"selector":"@s"},{"text":"$(message)","color":"gray"}]}
+$tellraw @a[distance=0.0001..,tag=!in_game] {"translate":"%s %s%s","with":[{"text":"[☠]","color":"red"},{"selector":"@s"},{"text":"$(message)","color":"gray"}]}

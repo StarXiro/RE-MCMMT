@@ -1,0 +1,1 @@
+$execute as @e[limit=1,tag=generated,nbt={data:{color:"$(team)"}}] run function snowballfight:map/private/set_lead with entity @s data
